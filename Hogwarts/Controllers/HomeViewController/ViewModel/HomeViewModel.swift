@@ -13,4 +13,16 @@ class HomeViewModel {
         return 10
     }
     
+    func getCharacters() {
+        ApiCaller.getCharacters { result in
+            switch result {
+            case .success(let characters):
+                print("Characters count: \(characters.count)")
+                break
+            case .failure(let error):
+                print(error)
+                break
+            }
+        }
+    }
 }

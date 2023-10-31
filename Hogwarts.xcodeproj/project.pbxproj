@@ -20,6 +20,9 @@
 		843845282AF0EEE70056D5AC /* CharacterCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 843845262AF0EEE70056D5AC /* CharacterCollectionViewCell.xib */; };
 		8438452A2AF0F29B0056D5AC /* HomeViewController+UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843845292AF0F29B0056D5AC /* HomeViewController+UICollectionView.swift */; };
 		843845322AF17DB90056D5AC /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843845312AF17DB90056D5AC /* HomeViewModel.swift */; };
+		843845362AF182000056D5AC /* CharactersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843845352AF182000056D5AC /* CharactersModel.swift */; };
+		843845392AF1839F0056D5AC /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843845382AF1839F0056D5AC /* NetworkConstants.swift */; };
+		8438453B2AF1844F0056D5AC /* ApiCaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8438453A2AF1844F0056D5AC /* ApiCaller.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +60,9 @@
 		843845262AF0EEE70056D5AC /* CharacterCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterCollectionViewCell.xib; sourceTree = "<group>"; };
 		843845292AF0F29B0056D5AC /* HomeViewController+UICollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+UICollectionView.swift"; sourceTree = "<group>"; };
 		843845312AF17DB90056D5AC /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		843845352AF182000056D5AC /* CharactersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersModel.swift; sourceTree = "<group>"; };
+		843845382AF1839F0056D5AC /* NetworkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
+		8438453A2AF1844F0056D5AC /* ApiCaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiCaller.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +114,8 @@
 		843844E72AF0DBCB0056D5AC /* Hogwarts */ = {
 			isa = PBXGroup;
 			children = (
+				843845372AF183820056D5AC /* Networking */,
+				843845332AF1812C0056D5AC /* Models */,
 				843845222AF0EE3C0056D5AC /* Views */,
 				843845202AF0E9040056D5AC /* Resources */,
 				8438451A2AF0E4F50056D5AC /* Controllers */,
@@ -177,6 +185,23 @@
 				843845312AF17DB90056D5AC /* HomeViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		843845332AF1812C0056D5AC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				843845352AF182000056D5AC /* CharactersModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		843845372AF183820056D5AC /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				843845382AF1839F0056D5AC /* NetworkConstants.swift */,
+				8438453A2AF1844F0056D5AC /* ApiCaller.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -312,11 +337,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				843845392AF1839F0056D5AC /* NetworkConstants.swift in Sources */,
 				8438452A2AF0F29B0056D5AC /* HomeViewController+UICollectionView.swift in Sources */,
 				843845272AF0EEE70056D5AC /* CharacterCollectionViewCell.swift in Sources */,
 				843844E92AF0DBCB0056D5AC /* AppDelegate.swift in Sources */,
+				843845362AF182000056D5AC /* CharactersModel.swift in Sources */,
 				843845322AF17DB90056D5AC /* HomeViewModel.swift in Sources */,
 				8438451E2AF0E57F0056D5AC /* HomeViewController.swift in Sources */,
+				8438453B2AF1844F0056D5AC /* ApiCaller.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

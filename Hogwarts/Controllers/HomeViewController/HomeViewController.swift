@@ -18,6 +18,11 @@ class HomeViewController: UIViewController {
         configView()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        viewModel.getCharacters()
+    }
+    
     func configView() {
         // Do any additional setup after loading the view.
         self.title = "Hogwarts"
