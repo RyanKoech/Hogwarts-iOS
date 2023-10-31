@@ -8,15 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		843844E92AF0DBCB0056D5AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843844E82AF0DBCB0056D5AC /* AppDelegate.swift */; };
-		843844EB2AF0DBCB0056D5AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843844EA2AF0DBCB0056D5AC /* SceneDelegate.swift */; };
-		843844ED2AF0DBCB0056D5AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843844EC2AF0DBCB0056D5AC /* ViewController.swift */; };
-		843844F02AF0DBCB0056D5AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843844EE2AF0DBCB0056D5AC /* Main.storyboard */; };
 		843844F22AF0DBCD0056D5AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 843844F12AF0DBCD0056D5AC /* Assets.xcassets */; };
 		843844F52AF0DBCD0056D5AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843844F32AF0DBCD0056D5AC /* LaunchScreen.storyboard */; };
 		843845002AF0DBCD0056D5AC /* HogwartsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843844FF2AF0DBCD0056D5AC /* HogwartsTests.swift */; };
 		8438450A2AF0DBCD0056D5AC /* HogwartsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843845092AF0DBCD0056D5AC /* HogwartsUITests.swift */; };
 		8438450C2AF0DBCD0056D5AC /* HogwartsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8438450B2AF0DBCD0056D5AC /* HogwartsUITestsLaunchTests.swift */; };
 		843845192AF0E1A30056D5AC /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 843845182AF0E1A30056D5AC /* .gitignore */; };
+		8438451E2AF0E57F0056D5AC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8438451C2AF0E57F0056D5AC /* HomeViewController.swift */; };
+		8438451F2AF0E57F0056D5AC /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8438451D2AF0E57F0056D5AC /* HomeViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,9 +38,6 @@
 /* Begin PBXFileReference section */
 		843844E52AF0DBCB0056D5AC /* Hogwarts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hogwarts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		843844E82AF0DBCB0056D5AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		843844EA2AF0DBCB0056D5AC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		843844EC2AF0DBCB0056D5AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		843844EF2AF0DBCB0056D5AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		843844F12AF0DBCD0056D5AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		843844F42AF0DBCD0056D5AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		843844F62AF0DBCD0056D5AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +47,8 @@
 		843845092AF0DBCD0056D5AC /* HogwartsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HogwartsUITests.swift; sourceTree = "<group>"; };
 		8438450B2AF0DBCD0056D5AC /* HogwartsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HogwartsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		843845182AF0E1A30056D5AC /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		8438451C2AF0E57F0056D5AC /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		8438451D2AF0E57F0056D5AC /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,11 +100,9 @@
 		843844E72AF0DBCB0056D5AC /* Hogwarts */ = {
 			isa = PBXGroup;
 			children = (
+				843845202AF0E9040056D5AC /* Resources */,
+				8438451A2AF0E4F50056D5AC /* Controllers */,
 				843844E82AF0DBCB0056D5AC /* AppDelegate.swift */,
-				843844EA2AF0DBCB0056D5AC /* SceneDelegate.swift */,
-				843844EC2AF0DBCB0056D5AC /* ViewController.swift */,
-				843844EE2AF0DBCB0056D5AC /* Main.storyboard */,
-				843844F12AF0DBCD0056D5AC /* Assets.xcassets */,
 				843844F32AF0DBCD0056D5AC /* LaunchScreen.storyboard */,
 				843844F62AF0DBCD0056D5AC /* Info.plist */,
 			);
@@ -128,6 +124,31 @@
 				8438450B2AF0DBCD0056D5AC /* HogwartsUITestsLaunchTests.swift */,
 			);
 			path = HogwartsUITests;
+			sourceTree = "<group>";
+		};
+		8438451A2AF0E4F50056D5AC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8438451B2AF0E5250056D5AC /* HomeViewController */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8438451B2AF0E5250056D5AC /* HomeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8438451C2AF0E57F0056D5AC /* HomeViewController.swift */,
+				8438451D2AF0E57F0056D5AC /* HomeViewController.xib */,
+			);
+			path = HomeViewController;
+			sourceTree = "<group>";
+		};
+		843845202AF0E9040056D5AC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				843844F12AF0DBCD0056D5AC /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,7 +258,7 @@
 				843845192AF0E1A30056D5AC /* .gitignore in Resources */,
 				843844F52AF0DBCD0056D5AC /* LaunchScreen.storyboard in Resources */,
 				843844F22AF0DBCD0056D5AC /* Assets.xcassets in Resources */,
-				843844F02AF0DBCB0056D5AC /* Main.storyboard in Resources */,
+				8438451F2AF0E57F0056D5AC /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,9 +283,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				843844ED2AF0DBCB0056D5AC /* ViewController.swift in Sources */,
 				843844E92AF0DBCB0056D5AC /* AppDelegate.swift in Sources */,
-				843844EB2AF0DBCB0056D5AC /* SceneDelegate.swift in Sources */,
+				8438451E2AF0E57F0056D5AC /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,14 +321,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		843844EE2AF0DBCB0056D5AC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				843844EF2AF0DBCB0056D5AC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		843844F32AF0DBCD0056D5AC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -450,9 +462,9 @@
 				INFOPLIST_FILE = Hogwarts/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -460,9 +472,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ryankoech.Hogwarts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -477,9 +492,9 @@
 				INFOPLIST_FILE = Hogwarts/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -487,9 +502,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ryankoech.Hogwarts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
