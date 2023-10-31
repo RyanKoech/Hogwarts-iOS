@@ -16,6 +16,10 @@
 		843845192AF0E1A30056D5AC /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 843845182AF0E1A30056D5AC /* .gitignore */; };
 		8438451E2AF0E57F0056D5AC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8438451C2AF0E57F0056D5AC /* HomeViewController.swift */; };
 		8438451F2AF0E57F0056D5AC /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8438451D2AF0E57F0056D5AC /* HomeViewController.xib */; };
+		843845272AF0EEE70056D5AC /* CharacterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843845252AF0EEE70056D5AC /* CharacterCollectionViewCell.swift */; };
+		843845282AF0EEE70056D5AC /* CharacterCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 843845262AF0EEE70056D5AC /* CharacterCollectionViewCell.xib */; };
+		8438452A2AF0F29B0056D5AC /* HomeViewController+UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843845292AF0F29B0056D5AC /* HomeViewController+UICollectionView.swift */; };
+		843845322AF17DB90056D5AC /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843845312AF17DB90056D5AC /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		843845182AF0E1A30056D5AC /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		8438451C2AF0E57F0056D5AC /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		8438451D2AF0E57F0056D5AC /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		843845252AF0EEE70056D5AC /* CharacterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCollectionViewCell.swift; sourceTree = "<group>"; };
+		843845262AF0EEE70056D5AC /* CharacterCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterCollectionViewCell.xib; sourceTree = "<group>"; };
+		843845292AF0F29B0056D5AC /* HomeViewController+UICollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+UICollectionView.swift"; sourceTree = "<group>"; };
+		843845312AF17DB90056D5AC /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +108,7 @@
 		843844E72AF0DBCB0056D5AC /* Hogwarts */ = {
 			isa = PBXGroup;
 			children = (
+				843845222AF0EE3C0056D5AC /* Views */,
 				843845202AF0E9040056D5AC /* Resources */,
 				8438451A2AF0E4F50056D5AC /* Controllers */,
 				843844E82AF0DBCB0056D5AC /* AppDelegate.swift */,
@@ -137,8 +146,10 @@
 		8438451B2AF0E5250056D5AC /* HomeViewController */ = {
 			isa = PBXGroup;
 			children = (
+				843845302AF17D940056D5AC /* ViewModel */,
 				8438451C2AF0E57F0056D5AC /* HomeViewController.swift */,
 				8438451D2AF0E57F0056D5AC /* HomeViewController.xib */,
+				843845292AF0F29B0056D5AC /* HomeViewController+UICollectionView.swift */,
 			);
 			path = HomeViewController;
 			sourceTree = "<group>";
@@ -149,6 +160,23 @@
 				843844F12AF0DBCD0056D5AC /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		843845222AF0EE3C0056D5AC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				843845252AF0EEE70056D5AC /* CharacterCollectionViewCell.swift */,
+				843845262AF0EEE70056D5AC /* CharacterCollectionViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		843845302AF17D940056D5AC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				843845312AF17DB90056D5AC /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +286,7 @@
 				843845192AF0E1A30056D5AC /* .gitignore in Resources */,
 				843844F52AF0DBCD0056D5AC /* LaunchScreen.storyboard in Resources */,
 				843844F22AF0DBCD0056D5AC /* Assets.xcassets in Resources */,
+				843845282AF0EEE70056D5AC /* CharacterCollectionViewCell.xib in Resources */,
 				8438451F2AF0E57F0056D5AC /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,7 +312,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8438452A2AF0F29B0056D5AC /* HomeViewController+UICollectionView.swift in Sources */,
+				843845272AF0EEE70056D5AC /* CharacterCollectionViewCell.swift in Sources */,
 				843844E92AF0DBCB0056D5AC /* AppDelegate.swift in Sources */,
+				843845322AF17DB90056D5AC /* HomeViewModel.swift in Sources */,
 				8438451E2AF0E57F0056D5AC /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
