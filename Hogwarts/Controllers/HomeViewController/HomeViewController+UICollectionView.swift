@@ -46,4 +46,8 @@ extension HomeViewController : UICollectionViewDelegate, UICollectionViewDataSou
         let size = (charactersCollectionView.frame.size.width - 30)/2
         return CGSize(width: size, height: size)
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        self.navigateToCharacterDetails()
+    }
 }

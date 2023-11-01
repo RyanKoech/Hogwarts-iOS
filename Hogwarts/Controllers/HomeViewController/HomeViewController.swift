@@ -20,10 +20,6 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         configView()
         bindViewModel()
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
         viewModel.getCharacters()
     }
     
@@ -55,5 +51,8 @@ class HomeViewController: UIViewController {
         }.store(in: &subscriptions)
     }
 
+    func navigateToCharacterDetails() {
+        self.navigationController?.pushViewController(CharacterDetailsViewController(), animated: true)
+    }
 
 }

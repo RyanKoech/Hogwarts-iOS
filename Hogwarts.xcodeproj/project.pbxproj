@@ -24,6 +24,8 @@
 		843845392AF1839F0056D5AC /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843845382AF1839F0056D5AC /* NetworkConstants.swift */; };
 		8438453B2AF1844F0056D5AC /* ApiCaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8438453A2AF1844F0056D5AC /* ApiCaller.swift */; };
 		8438453E2AF293E40056D5AC /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 8438453D2AF293E40056D5AC /* SDWebImage */; };
+		843845422AF2AB9C0056D5AC /* CharacterDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843845402AF2AB9C0056D5AC /* CharacterDetailsViewController.swift */; };
+		843845432AF2AB9C0056D5AC /* CharacterDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 843845412AF2AB9C0056D5AC /* CharacterDetailsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,8 @@
 		843845352AF182000056D5AC /* CharactersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersModel.swift; sourceTree = "<group>"; };
 		843845382AF1839F0056D5AC /* NetworkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
 		8438453A2AF1844F0056D5AC /* ApiCaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiCaller.swift; sourceTree = "<group>"; };
+		843845402AF2AB9C0056D5AC /* CharacterDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailsViewController.swift; sourceTree = "<group>"; };
+		843845412AF2AB9C0056D5AC /* CharacterDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterDetailsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +152,7 @@
 		8438451A2AF0E4F50056D5AC /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				8438453F2AF2AB690056D5AC /* CharacterDetailsViewController */,
 				8438451B2AF0E5250056D5AC /* HomeViewController */,
 			);
 			path = Controllers;
@@ -204,6 +209,15 @@
 				8438453A2AF1844F0056D5AC /* ApiCaller.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		8438453F2AF2AB690056D5AC /* CharacterDetailsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				843845402AF2AB9C0056D5AC /* CharacterDetailsViewController.swift */,
+				843845412AF2AB9C0056D5AC /* CharacterDetailsViewController.xib */,
+			);
+			path = CharacterDetailsViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -319,6 +333,7 @@
 				843845192AF0E1A30056D5AC /* .gitignore in Resources */,
 				843844F52AF0DBCD0056D5AC /* LaunchScreen.storyboard in Resources */,
 				843844F22AF0DBCD0056D5AC /* Assets.xcassets in Resources */,
+				843845432AF2AB9C0056D5AC /* CharacterDetailsViewController.xib in Resources */,
 				843845282AF0EEE70056D5AC /* CharacterCollectionViewCell.xib in Resources */,
 				8438451F2AF0E57F0056D5AC /* HomeViewController.xib in Resources */,
 			);
@@ -353,6 +368,7 @@
 				843845322AF17DB90056D5AC /* HomeViewModel.swift in Sources */,
 				8438451E2AF0E57F0056D5AC /* HomeViewController.swift in Sources */,
 				8438453B2AF1844F0056D5AC /* ApiCaller.swift in Sources */,
+				843845422AF2AB9C0056D5AC /* CharacterDetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
