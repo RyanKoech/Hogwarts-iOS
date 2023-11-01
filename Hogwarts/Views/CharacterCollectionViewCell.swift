@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class CharacterCollectionViewCell: UICollectionViewCell {
 
@@ -23,7 +24,8 @@ class CharacterCollectionViewCell: UICollectionViewCell {
         // Initialization code
     }
     
-    func setUpCell() {
-        self.characterNameLabel.text = "Test"
+    func setUpCell(name : String, imageUrl : URL?) {
+        self.characterImageView.sd_setImage(with: imageUrl, placeholderImage: UIImage(named: "fallback"))
+        self.characterNameLabel.text = name
     }
 }

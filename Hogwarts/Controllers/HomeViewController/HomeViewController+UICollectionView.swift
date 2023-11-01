@@ -23,6 +23,12 @@ extension HomeViewController : UICollectionViewDelegate, UICollectionViewDataSou
         self.charactersCollectionView.register(CharacterCollectionViewCell.registerCell(), forCellWithReuseIdentifier: CharacterCollectionViewCell.indentifier)
     }
     
+    func reloadCharactersCollectionView() {
+        DispatchQueue.main.async {
+            self.charactersCollectionView.reloadData()
+        }
+    }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return viewModel.numberOfRows()
     }
@@ -31,7 +37,8 @@ extension HomeViewController : UICollectionViewDelegate, UICollectionViewDataSou
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CharacterCollectionViewCell.indentifier, for: indexPath) as? CharacterCollectionViewCell else {
             return UICollectionViewCell()
         }
-        cell.setUpCell()
+        let character = viewModel.characters[indexPath.row]
+        cell.setUpCell(name: character.name, imageUrl: character.getURL())
         return cell
     }
     

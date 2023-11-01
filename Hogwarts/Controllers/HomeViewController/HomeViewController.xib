@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="Hogwarts" customModuleProvider="target">
             <connections>
+                <outlet property="activityIndicatorView" destination="1Ax-jH-2Jd" id="UYV-3d-c0O"/>
                 <outlet property="charactersCollectionView" destination="ulz-ma-W86" id="HDH-xa-diL"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -29,6 +30,10 @@
                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                     </collectionViewFlowLayout>
                 </collectionView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="1Ax-jH-2Jd">
+                    <rect key="frame" x="178" y="407.66666666666669" width="37" height="37"/>
+                    <color key="color" systemColor="systemGray2Color"/>
+                </activityIndicatorView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -37,6 +42,8 @@
                 <constraint firstItem="ulz-ma-W86" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="SCs-ZE-sLv"/>
                 <constraint firstItem="ulz-ma-W86" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="T4s-7D-UFj"/>
                 <constraint firstItem="ulz-ma-W86" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="X5X-Ap-NvM"/>
+                <constraint firstItem="1Ax-jH-2Jd" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="gdB-5H-VB0"/>
+                <constraint firstItem="1Ax-jH-2Jd" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="nJc-49-v6F"/>
             </constraints>
             <point key="canvasLocation" x="118" y="21"/>
         </view>
@@ -44,6 +51,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

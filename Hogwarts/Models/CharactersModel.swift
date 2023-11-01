@@ -33,6 +33,10 @@ struct Character: Codable {
         case alternateActors = "alternate_actors"
         case alive, image
     }
+    
+    func getURL() -> URL? {
+        URL(string: self.image)
+    }
 }
 
 enum Ancestry: String, Codable {
