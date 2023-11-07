@@ -9,6 +9,7 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    @IBOutlet weak var characterSearchBar: UISearchBar!
     @IBOutlet weak var charactersCollectionView: UICollectionView!
     @IBOutlet weak var activityIndicatorView: UIActivityIndicatorView!
     
@@ -27,6 +28,7 @@ class HomeViewController: UIViewController {
         // Do any additional setup after loading the view.
         self.title = "Hogwarts"
         setupColllectionView()
+        bindSearchBar()
     }
     
     func bindViewModel() {
@@ -43,7 +45,7 @@ class HomeViewController: UIViewController {
             }
         }.store(in: &subscriptions)
         
-        viewModel.$characters.sink { [weak self] characters in
+        viewModel.$searchedCharacters.sink { [weak self] characters in
             guard let self  = self else {
                 return
             }
@@ -54,7 +56,7 @@ class HomeViewController: UIViewController {
     func navigateToCharacterDetails(index : Int) {
         self.navigationController?.pushViewController(
             CharacterDetailsViewController(
-                character : self.viewModel.characters[index]
+                character : self.viewModel.searchedCharacters[index]
             ),
             animated: true
         )

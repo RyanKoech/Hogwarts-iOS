@@ -11,6 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="Hogwarts" customModuleProvider="target">
             <connections>
                 <outlet property="activityIndicatorView" destination="1Ax-jH-2Jd" id="UYV-3d-c0O"/>
+                <outlet property="characterSearchBar" destination="tTg-Xz-1En" id="J9a-7n-gvn"/>
                 <outlet property="charactersCollectionView" destination="ulz-ma-W86" id="HDH-xa-diL"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -21,7 +22,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="ulz-ma-W86">
-                    <rect key="frame" x="0.0" y="0.0" width="393" height="818"/>
+                    <rect key="frame" x="0.0" y="115" width="393" height="703"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="E7E-EU-03D">
                         <size key="itemSize" width="128" height="128"/>
@@ -34,18 +35,28 @@
                     <rect key="frame" x="178" y="407.66666666666669" width="37" height="37"/>
                     <color key="color" systemColor="systemGray2Color"/>
                 </activityIndicatorView>
+                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="tTg-Xz-1En">
+                    <rect key="frame" x="0.0" y="59" width="393" height="56"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="TpQ-I4-SPB"/>
+                    </connections>
+                </searchBar>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="tTg-Xz-1En" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="9ag-9M-cXa"/>
                 <constraint firstItem="ulz-ma-W86" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="B9p-vL-ADa"/>
+                <constraint firstItem="tTg-Xz-1En" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="H4B-41-NAA"/>
+                <constraint firstItem="tTg-Xz-1En" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="OrQ-I5-jJ9"/>
                 <constraint firstItem="ulz-ma-W86" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="SCs-ZE-sLv"/>
                 <constraint firstItem="ulz-ma-W86" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="T4s-7D-UFj"/>
-                <constraint firstItem="ulz-ma-W86" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="X5X-Ap-NvM"/>
+                <constraint firstItem="ulz-ma-W86" firstAttribute="top" secondItem="tTg-Xz-1En" secondAttribute="bottom" id="c4x-Sz-nU0"/>
                 <constraint firstItem="1Ax-jH-2Jd" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="gdB-5H-VB0"/>
                 <constraint firstItem="1Ax-jH-2Jd" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="nJc-49-v6F"/>
             </constraints>
-            <point key="canvasLocation" x="118" y="21"/>
+            <point key="canvasLocation" x="116.79389312977099" y="20.422535211267608"/>
         </view>
     </objects>
     <resources>

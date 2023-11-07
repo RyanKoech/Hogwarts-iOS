@@ -37,7 +37,7 @@ extension HomeViewController : UICollectionViewDelegate, UICollectionViewDataSou
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CharacterCollectionViewCell.indentifier, for: indexPath) as? CharacterCollectionViewCell else {
             return UICollectionViewCell()
         }
-        let character = viewModel.characters[indexPath.row]
+        let character = viewModel.searchedCharacters[indexPath.row]
         cell.setUpCell(name: character.name, imageUrl: character.getURL())
         return cell
     }
