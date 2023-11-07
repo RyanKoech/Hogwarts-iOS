@@ -26,6 +26,7 @@
 		8438453E2AF293E40056D5AC /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 8438453D2AF293E40056D5AC /* SDWebImage */; };
 		843845422AF2AB9C0056D5AC /* CharacterDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843845402AF2AB9C0056D5AC /* CharacterDetailsViewController.swift */; };
 		843845432AF2AB9C0056D5AC /* CharacterDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 843845412AF2AB9C0056D5AC /* CharacterDetailsViewController.xib */; };
+		843A9A552AFAA4B300A0F7CA /* ReadMe.md in Resources */ = {isa = PBXBuildFile; fileRef = 843A9A542AFAA4B300A0F7CA /* ReadMe.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		8438453A2AF1844F0056D5AC /* ApiCaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiCaller.swift; sourceTree = "<group>"; };
 		843845402AF2AB9C0056D5AC /* CharacterDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailsViewController.swift; sourceTree = "<group>"; };
 		843845412AF2AB9C0056D5AC /* CharacterDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterDetailsViewController.xib; sourceTree = "<group>"; };
+		843A9A542AFAA4B300A0F7CA /* ReadMe.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ReadMe.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		843844DC2AF0DBCB0056D5AC = {
 			isa = PBXGroup;
 			children = (
+				843A9A542AFAA4B300A0F7CA /* ReadMe.md */,
 				843845182AF0E1A30056D5AC /* .gitignore */,
 				843844E72AF0DBCB0056D5AC /* Hogwarts */,
 				843844FE2AF0DBCD0056D5AC /* HogwartsTests */,
@@ -335,6 +338,7 @@
 				843844F22AF0DBCD0056D5AC /* Assets.xcassets in Resources */,
 				843845432AF2AB9C0056D5AC /* CharacterDetailsViewController.xib in Resources */,
 				843845282AF0EEE70056D5AC /* CharacterCollectionViewCell.xib in Resources */,
+				843A9A552AFAA4B300A0F7CA /* ReadMe.md in Resources */,
 				8438451F2AF0E57F0056D5AC /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
