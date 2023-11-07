@@ -51,8 +51,13 @@ class HomeViewController: UIViewController {
         }.store(in: &subscriptions)
     }
 
-    func navigateToCharacterDetails() {
-        self.navigationController?.pushViewController(CharacterDetailsViewController(), animated: true)
+    func navigateToCharacterDetails(index : Int) {
+        self.navigationController?.pushViewController(
+            CharacterDetailsViewController(
+                character : self.viewModel.characters[index]
+            ),
+            animated: true
+        )
     }
 
 }

@@ -37,6 +37,34 @@ struct Character: Codable {
     func getURL() -> URL? {
         URL(string: self.image)
     }
+    
+    func getName() -> String {
+        return self.name
+    }
+    
+    func getDateOfBirth() -> String {
+        return self.dateOfBirth ?? "Unknown"
+    }
+    
+    func getIsWizardString() -> String {
+        return String(self.wizard)
+    }
+    
+    func getAncestry() -> String {
+        return self.ancestry.rawValue.isEmpty ? "Unknown" : self.ancestry.rawValue
+    }
+    
+    func getGender() -> String {
+        return self.gender.rawValue
+    }
+    
+    func getSpecies() -> String {
+        return self.species.rawValue
+    }
+    
+    func getAliveOrDead() -> String {
+        return self.alive ? "Alive" : "Dead"
+    }
 }
 
 enum Ancestry: String, Codable {

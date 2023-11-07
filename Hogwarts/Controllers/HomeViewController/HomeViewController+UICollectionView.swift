@@ -48,6 +48,6 @@ extension HomeViewController : UICollectionViewDelegate, UICollectionViewDataSou
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        self.navigateToCharacterDetails()
+        self.navigateToCharacterDetails(index: indexPath.row)
     }
 }
